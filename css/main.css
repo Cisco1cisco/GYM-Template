@@ -217,19 +217,27 @@ header nav ul li a.active {
 }
 
 .landing  .image {
-    position: absolute;
     width: 100%;
 }
 
 @media (max-width: 991px) {
     .landing  .image {
-        top: 80px;
+        margin-top: 75px;
     }
+}
+
+.landing  .image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 30%);
 }
 
 .landing  .image img {
     z-index: -1;
     width: 100%;
+    max-height: calc(100vh + 100px);
 }
 
 .landing .content p {
@@ -301,3 +309,121 @@ header nav ul li a.active {
 }
 
 /* Landing End */
+
+/* No Name one Start */
+
+.noname-one {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .noname-one {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+}
+
+.noname-one div.red,
+.noname-one .black {
+    padding: 55px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    position: relative;
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .noname-one div.red,
+    .noname-one .black {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .noname-one div.red,
+    .noname-one .black {
+        width: 100%;
+    }
+
+}
+
+.noname-one div.red {
+    background-color: #e31c25;
+    align-items: flex-end;
+}
+
+.noname-one div.red::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    left: 0;
+    background-image: url(../Photos/six-pack.png);
+    background-size: cover;
+}
+
+.noname-one .black {
+    background-color: #111;
+    align-items: flex-start;
+}
+
+.noname-one .black::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+    background-image: url(../Photos/muscles.png);
+    background-size: cover;
+}
+
+.noname-one div.red h2,
+.noname-one .black h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.noname-one div.red p, 
+.noname-one .black p {
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    width: 80%;
+    font-size: 18px;
+}
+
+.noname-one div.red p {
+    text-align: end;
+}
+
+.noname-one div.red button,
+.noname-one .black button {
+    background: none;
+    border: 3px solid white;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+} 
+
+.noname-one div.red button:hover,
+.noname-one .black button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* No Name one End */
