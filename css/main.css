@@ -1,6 +1,4 @@
 /* Variables Start */
-:root {
-}
 /* Variables End */
 
 /* Global Rules Start */
@@ -549,3 +547,46 @@ header nav ul li a.active {
 }
 
 /* About End */
+
+/* No Name Two Start */
+
+.noname-two {
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .noname-two {
+        flex-direction: column;
+    }
+}
+
+.noname-two div.card {
+    background-color: black;
+    padding: 65px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.noname-two div.card .image {
+    margin-right: 30px;
+}
+
+.noname-two div.card .image img {
+    width: 70px;
+}
+
+.noname-two div.card div.text h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.noname-two div.card div.text p {
+    color: white;
+    line-height: 1.5;
+}
+
+.noname-two div.card.red {
+    background-color: #e31c25;
+}
+
+/* No Name Two End */
