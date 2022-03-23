@@ -1048,12 +1048,19 @@ header nav ul li a.active {
     font-size: 20px;
 }
 
-.bmi .calc .inputs input {
+.bmi .calc .inputs input , 
+.bmi .calc .inputs select {
     background-color: #343a40;
     border: 1px solid #ced4da;
     width: 48%;
     margin-bottom: 20px;
     padding: 12px 10px;
+    color: #757575;
+}
+
+.bmi .calc .inputs input:focus , 
+.bmi .calc .inputs select:focus {
+    outline: 1px solid #e31c25;
 }
 
 .bmi .calc .inputs button {
