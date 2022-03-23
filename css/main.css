@@ -960,3 +960,118 @@ header nav ul li a.active {
 }
 
 /* Calender End */
+
+/* BMI Start */
+
+.bmi {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 93%;
+}
+
+@media (max-width: 768px) {
+    .bmi {
+        width: 100%;
+    }
+}
+
+.bmi .image {
+    background-image: url(../Photos/carousel-1.jpg);
+    background-size: cover;
+    background-position: right;
+    padding: 100px 50px;
+    position: relative;
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .bmi .image {
+        padding: 100px 30px;
+        background-position: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .bmi .image {
+        display: none;
+    }
+}
+
+.bmi .image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.bmi .image .content {
+    position: relative;
+}
+
+.bmi .image .content h4 {
+    color: #e31c25;
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.bmi .image .content p:first-of-type {
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.bmi .image .content P:last-of-type {
+    color: white;
+    line-height: 1.4;
+}
+
+.bmi .calc {
+    background-color: #111111;
+    padding: 100px 20px 60px;
+}
+
+.bmi .calc h3 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.bmi .calc .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.bmi .calc .inputs input {
+    background-color: #343a40;
+    border: 1px solid #ced4da;
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 12px 10px;
+}
+
+.bmi .calc .inputs button {
+    flex-grow: 1;
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #ced4da;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.bmi .calc .inputs button:hover {
+    background-color: #23272b;
+}
+
+/* BMI End */
