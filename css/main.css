@@ -1082,3 +1082,135 @@ header nav ul li a.active {
 }
 
 /* BMI End */
+
+/* Trainers Start */
+
+.trainers {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+@media (max-width: 768px) {
+    .trainers {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.trainers .container > h4 {
+    color: #e31c25;
+    text-align: center;
+    font-size: 25px;
+}
+
+.trainers .container > p {
+    color: #343a40;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trainers .container .content-trainers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .trainers .container .content-trainers {
+        justify-content: center;
+    }
+}
+.trainers .container .content-trainers .trainer {
+    flex-basis: 24%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .trainers .container .content-trainers .trainer {
+        flex-basis: 49%;
+    }
+}
+
+@media (max-width: 768px) {
+    .trainers .container .content-trainers .trainer {
+        flex-basis: 70%;
+    }
+}
+
+
+.trainers .container .content-trainers .trainer img {
+    width: 100%;
+}
+
+.trainers .container .content-trainers .trainer .text {
+    background-color: #111;
+    padding: 20px;
+}
+
+.trainers .container .content-trainers .trainer .text h4 {
+    color: #e31c25;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.trainers .container .content-trainers .trainer .text p {
+    color: white;
+    text-align: center;
+}
+
+.trainers .container .content-trainers .trainer .social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -700px;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.trainers .container .content-trainers .trainer:hover .social {
+    bottom: 0;
+}
+
+.trainers .container .content-trainers .trainer .social i {
+    color: white;
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.trainers .container .content-trainers .trainer .social i:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Trainers End */
