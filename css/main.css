@@ -1214,3 +1214,150 @@ header nav ul li a.active {
 }
 
 /* Trainers End */
+
+/* Opinion Start */
+
+.opinion {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.opinion .content {
+    display: flex;
+    width: 93%;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .opinion .content {
+        width: 100%;
+    }
+}
+
+.opinion .content .client {
+    background-color: #111111;
+    padding: 75px 30px;
+}
+
+.opinion .content .client .porfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.opinion .content .client .porfile img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 8px solid #343a40;
+    margin-right: 20px;
+    width: 85px;
+}
+
+.opinion .content .client .porfile .name { 
+    display: flex; 
+    flex-direction: column;
+}
+
+.opinion .content .client .porfile .name h3 {
+    color: #e31c25;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.opinion .content .client .porfile .name span {
+    color: white;
+    display: block;
+}
+
+.opinion .content .client  p {
+    color: white;
+    background-color: #343a40;
+    padding: 40px 15px;
+    margin: 0 auto;
+    border: 1px solid white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.opinion .content .client  p::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -21px;
+    left: 33px;
+    border-style: solid;
+    border-width: 10px;
+    border-color:  transparent transparent white transparent;
+}
+
+.opinion .content .client .click {
+    display: flex;
+    justify-content: center;
+}
+
+.opinion .content .client .click span {
+    height: 3px;
+    width: 30px;
+    background-color: #888888;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.opinion .content .client .click span.active {
+    background-color: white;
+}
+
+.opinion .content .testimonial {
+    background-image: url(../Photos/carousel-2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .opinion .content .testimonial {
+        display: none;
+    }
+}
+
+.opinion .content .testimonial::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.opinion .content .testimonial .test-content {
+    position: relative;
+    padding: 100px 50px;
+    z-index: 2;
+}
+
+.opinion .content .testimonial .test-content h4 {
+    color: #e31c25;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.opinion .content .testimonial .test-content p:first-of-type {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.opinion .content .testimonial .test-content p:last-of-type {
+    color: white;
+    line-height: 1.8;
+}
+
+/* Opinion End */
