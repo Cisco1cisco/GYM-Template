@@ -1483,7 +1483,7 @@ footer {
     padding-bottom: 50px;
     background-image: url(../Photos/bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     position: relative;
 }
 
