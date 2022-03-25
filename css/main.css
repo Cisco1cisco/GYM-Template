@@ -1513,3 +1513,156 @@ header nav ul li a.active {
 }
 
 /* Blog End */
+
+/* Footer Start */
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../Photos/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+footer .container {
+    position: relative;
+}
+
+footer .container .foot-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    footer .container .foot-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991px) {
+    footer .container .foot-content > div {
+        flex: 50%;
+    }
+}
+
+footer .container .foot-content h3 {
+    color: #e31c25;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+footer .container .foot-content ul {
+    list-style: none;
+    color: white;
+}
+
+footer .container .foot-content ul li {
+    margin-bottom: 15px;
+}
+
+footer .container .foot-content ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+footer .container .foot-content ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .container .foot-content ul li a[href="mailto:anasabdalla99@gmail.com"] {
+    text-transform: none;
+}
+
+footer .container .foot-content ul li i {
+    margin-right: 10px;
+}
+
+footer .container .foot-content .touch {
+    margin-bottom: 30px;
+}
+
+footer .container .foot-content .touch .socials {
+    color: white;
+    display: flex;
+    margin-top: 20px;
+}
+
+footer .container .foot-content .touch .socials i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+footer .container .foot-content .touch .socials i:hover {
+    background-color: white;
+    color: black;
+}
+
+footer .container .foot-content .open {
+    color: white;
+}
+
+footer .container .foot-content .open h4 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+footer .container .foot-content .open p {
+    margin-bottom: 20px;
+}
+
+footer .container hr {
+    border: 1px solid #343a40;
+}
+
+footer .container > p {
+    color: white;
+    text-align: center;
+    padding: 50px 10px 20px;
+    line-height: 2;
+}
+
+footer .container > p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container > p a:hover {
+    text-decoration: underline;
+}
+
+footer .container > p span {
+    font-weight: bold;
+}
+
+/* Footer End */
